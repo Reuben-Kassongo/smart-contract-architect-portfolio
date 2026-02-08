@@ -7,3 +7,6 @@ Start here:
 - PROOF.md
 - TRUTHMAP.md
 - execution/rk-city
+
+## Execution (Phase 3 — Proof)
+See: execution/README.md
