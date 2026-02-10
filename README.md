@@ -1,7 +1,7 @@
 # Smart-Contract Architect Portfolio
 
-Invariant-driven smart-contract architecture demonstrating correctness,
-security, and composability across core DeFi systems.
+Invariant-driven smart-contract architecture showing how correctness,
+security, and composability are enforced — **and how they fail when invariants break**.
 
 This portfolio proves:
 - correctness via executable invariants,
@@ -19,6 +19,8 @@ Depending on what you care about:
 - **Engineering correctness** → `execution/`
 - **Security reasoning** → `bug-zoo/`
 - **System design & scalability** → `architecture/`
+
+Rule: if an invariant is not executable or defended at an edge, it is considered unproven.
 
 ---
 
