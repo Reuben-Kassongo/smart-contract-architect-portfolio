@@ -1,11 +1,21 @@
-Phase 3 — Access Control Proof
+# Access Control — Proof
 
-Invariant:
-Only a legitimate admin may mutate privileged state.
+## Invariant
 
-Failure:
-Admin authority is reassigned without authorization.
+Only an authorised admin may mutate privileged state.
 
-Result:
-Invariant fails (expected).
-This is the proof.
+---
+
+## Enforcement
+
+- admin address is set at construction
+- all privileged state-changing functions are gated by `onlyAdmin`
+
+---
+
+## Proof Outcome
+
+- unauthorised callers cannot mutate privileged state
+- authority takeover is prevented
+- invariant is enforced under execution
+
