@@ -1,74 +1,71 @@
-## Foundry
+## Foundry (EVM Tooling)
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Foundry is used in this project to build and execute EVM smart contracts and to prove safety properties through tests.
 
-Foundry consists of:
+Primary uses:
+- invariant-driven testing
+- execution-level proof construction
+- gas measurement and local simulation
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Tooling:
+- Forge — Solidity testing (unit, invariant, fuzz)
+- Cast — contract and chain interaction
+- Anvil — local execution environment
+- Chisel — Solidity REPL
+
+---
 
 ## Documentation
-
 https://book.getfoundry.sh/
 
-## Usage
+---
 
-### Build
+## Common Commands
 
-```shell
-$ forge build
-```
+Build:
+    forge build
 
-### Test
+Test:
+    forge test
 
-```shell
-$ forge test
-```
+Format:
+    forge fmt
 
-### Format
+Gas snapshots:
+    forge snapshot
 
-```shell
-$ forge fmt
-```
+Local node:
+    anvil
 
-### Gas Snapshots
+Deploy:
+    forge script script/Counter.s.sol:CounterScript --rpc-url <RPC_URL> --private-key <PRIVATE_KEY>
 
-```shell
-$ forge snapshot
-```
+Cast:
+    cast <subcommand>
 
-### Anvil
+Help:
+    forge --help
+    anvil --help
+    cast --help
 
-```shell
-$ anvil
-```
+---
 
-### Deploy
+## Trust Model
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+### Explicit Assumptions
 
-### Cast
+- an admin may pause the system
+- an admin may configure reward parameters
+- an admin cannot seize or redirect user funds
+- user balances are fully tracked on-chain
 
-```shell
-$ cast <subcommand>
-```
+These assumptions are explicit and auditable.
+Future iterations replace the admin with multisig or on-chain governance.
 
-### Help
+---
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Scope
 
-## Trust Model (Phase 3)
-- Admin can pause the system
-- Admin can configure reward rate
-- Admin cannot seize user funds
-- All user balances are tracked on-chain
+This repository focuses on execution and proof.
+Design rationale and higher-level architecture are documented elsewhere.
 
-Future phases replace admin with multisig / governance.
