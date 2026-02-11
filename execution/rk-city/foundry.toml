@@ -10,3 +10,8 @@ solc_version = "0.8.20"
 evm_version = "paris"
 [fuzz]
 runs = 256
+
+dotenv = ".env"
+
+[rpc_endpoints]
+sepolia = "${RPC_URL}"

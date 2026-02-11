@@ -1,57 +1,69 @@
-# Phase 3 — Day 3: Staking House
+# Staking House — Execution Status
 
-Status: IN PROGRESS
+Status: execution in progress
+
+---
 
 ## Scope
-Only the Staking House is in scope.
-No AMM.
-No integration.
-No refactors.
+
+This work is scoped strictly to the Staking House.
+
+Out of scope:
+- AMM logic
+- cross-house integration
+- refactors or optimisations
 
 ---
 
 ## Files
+
 - contracts/core/CityStaking.sol
 - test/unit/CityStaking.t.sol
 
 ---
 
-## Core invariants to prove
+## Core Invariants
 
 ### 1. Monotonic Accrual
-- Earned rewards must never decrease.
-- Accrual index must only move forward.
+- earned rewards must never decrease
+- accrual index must only move forward
 
 ### 2. Single-Use Claim
-- Claim consumes earned rewards exactly once.
-- Repeated claim without new accrual pays zero.
+- claiming consumes earned rewards exactly once
+- repeated claims without new accrual pay zero
 
 ### 3. Update Before Payout
-- User accounting updated before token transfer.
-- No window where state is stale during payout.
+- user accounting is updated before token transfer
+- no execution window where state is stale during payout
 
 ### 4. No Stale Index Reuse
-- Old snapshots cannot be replayed.
-- Claim must reference the latest accounted index.
+- old snapshots cannot be replayed
+- claims must reference the latest accounted index
 
 ---
 
-## Minimum Test Cases (CityStaking.t.sol)
+## Required Test Coverage (CityStaking.t.sol)
 
-- stake increases principal
-- unstake reduces principal
-- accrue increases earned rewards
-- claim pays <= earned
-- second claim without accrue pays 0
+- staking increases principal
+- unstaking reduces principal
+- accrual increases earned rewards
+- claim pays no more than earned
+- second claim without new accrual pays zero
 - state updated before transfer (ordering test)
 
 ---
 
-## Completion Rule
-Day 3 is complete when:
-- All tests in CityStaking.t.sol are green
-- Each invariant above is clearly enforced by a test
-- No test relies on comments or assumptions
+## Completion Criteria
 
-Next step after completion:
-→ Phase 3 — Day 4: AMM
+This work is complete when:
+- all tests in CityStaking.t.sol pass
+- each invariant above is directly enforced by a test
+- no test relies on comments or unstated assumptions
+- successful completion demonstrates invariant safety under execution
+
+---
+
+## Next
+
+Proceed to AMM execution proofs.
+
