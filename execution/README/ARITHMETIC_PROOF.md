@@ -1,16 +1,29 @@
-# Phase 3 — Arithmetic Proof
+# Arithmetic — Proof
 
-Invariant:
-Minting must never decrease total supply (supply monotonicity).
+## Invariant
 
-Failure:
-Unchecked arithmetic + small integer type (uint8) can overflow.
-When totalSupply wraps, it can *decrease* after a mint.
+Total supply must be monotonically non-decreasing under mint operations.
 
-Proof:
+---
+
+## Violation Mechanism
+
+Unchecked arithmetic combined with a small integer type (`uint8`) can overflow.
+
+When `totalSupply` wraps, a subsequent mint operation causes the recorded supply to decrease, directly violating the invariant.
+
+---
+
+## Proof
+
 Run:
-forge test --match-path execution/tests/unit/arithmetic_proof.t.sol -vv
+    forge test --match-path execution/tests/unit/arithmetic_proof.t.sol -vv
 
-Expected result:
-- Test FAILS (expected)
-- Failure is the proof of exploitability.
+---
+
+## Proof Outcome
+
+- invariant check fails as expected
+- failure demonstrates a supply monotonicity violation
+- arithmetic overflow renders the mint logic exploitable
+
