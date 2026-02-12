@@ -1,14 +1,30 @@
 # Ignore everything by default
 *
 
-# Allow the portfolio files
+# Allow core portfolio files
 !README.md
 !PROOF.md
 !TRUTHMAP.md
+!.gitignore
+
+# Allow architecture
 !architecture/
 !architecture/**
+
+# Allow execution
 !execution/
 !execution/**
+
+# Allow bug zoo
 !bug-zoo/
 !bug-zoo/**
-!.gitignore
+
+# Allow capstone (Phase 7)
+!capstone/
+!capstone/**
+
+# Still ignore heavy build folders inside capstone
+capstone/**/node_modules/
+capstone/**/.next/
+capstone/**/dist/
+capstone/**/.env
