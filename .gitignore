@@ -28,3 +28,7 @@ capstone/**/node_modules/
 capstone/**/.next/
 capstone/**/dist/
 capstone/**/.env
+
+# --- allow recruiter navigation files ---
+!start-here/
+!start-here/**
