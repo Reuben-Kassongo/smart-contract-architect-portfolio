@@ -32,3 +32,6 @@ capstone/**/.env
 # --- allow recruiter navigation files ---
 !start-here/
 !start-here/**
+
+# --- deps ---
+node_modules/
