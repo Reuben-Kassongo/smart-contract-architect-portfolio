@@ -37,7 +37,7 @@ Core properties demonstrated:
 - price integrity (AMM).
 
 See:
-- `execution/README.md`
+- `execution/proofs.md`
 - `execution/rk-city/`
 
 ---
