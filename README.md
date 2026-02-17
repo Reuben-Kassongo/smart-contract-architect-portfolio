@@ -1,5 +1,7 @@
 # Smart-Contract Architect Portfolio
 
+👉 **Start here:** [start-here/README.md](./start-here/README.md)
+
 Invariant-driven smart-contract architecture showing how correctness,
 security, and composability are enforced — **and how they fail when invariants break**.
 
@@ -16,9 +18,9 @@ Audience: protocol engineers, smart-contract developers, and security reviewers.
 
 Depending on what you care about:
 
-- **Engineering correctness** → `execution/`
-- **Security reasoning** → `bug-zoo/`
-- **System design & scalability** → `architecture/`
+- **Engineering correctness** → [execution/](./execution/)
+- **Security reasoning** → [bug-zoo/](./bug-zoo/)
+- **System design & scalability** → [architecture/](./architecture/)
 
 Rule: if an invariant is not executable or defended at an edge, it is considered unproven.
 
@@ -37,8 +39,8 @@ Core properties demonstrated:
 - price integrity (AMM).
 
 See:
-- `execution/proofs.md`
-- `execution/rk-city/`
+- [execution/proofs.md](./execution/proofs.md)
+- [execution/rk-city/](./execution/rk-city/)
 
 ---
 
@@ -50,9 +52,9 @@ Contracts are grouped into districts, with explicit edges defining
 how truth flows — and how failures propagate.
 
 See:
-- `architecture/city-map.md`
-- `architecture/districts.md`
-- `architecture/edges.md`
+- [architecture/city-map.md](./architecture/city-map.md)
+- [architecture/districts.md](./architecture/districts.md)
+- [architecture/edges.md](./architecture/edges.md)
 
 ---
 
@@ -60,7 +62,7 @@ See:
 
 Security research and exploit demonstrations live in a **separate lab**:
 
-👉 `bug-zoo/` → links to **Protocol Security Lab**
+👉 [bug-zoo/](./bug-zoo/) → links to **Protocol Security Lab**
 
 This separation is intentional:
 - this repo shows how systems are built correctly,
