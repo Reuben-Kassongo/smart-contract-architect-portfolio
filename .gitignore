@@ -1,37 +1,39 @@
 # Ignore everything by default
 *
 
-# Allow core portfolio files
+# Always allow git + root docs
+!.gitignore
 !README.md
 !PROOF.md
 !TRUTHMAP.md
-!.gitignore
+!cv-summary.md
+!portfolio-map.md
 
-# Allow architecture
+# Allow recruiter routing + assets
+!start-here/
+!start-here/**
+!assets/
+!assets/**
+
+# Allow main folders
 !architecture/
 !architecture/**
-
-# Allow execution
 !execution/
 !execution/**
-
-# Allow bug zoo
 !bug-zoo/
 !bug-zoo/**
-
-# Allow capstone (Phase 7)
 !capstone/
 !capstone/**
 
-# Still ignore heavy build folders inside capstone
-capstone/**/node_modules/
-capstone/**/.next/
-capstone/**/dist/
-capstone/**/.env
+# Still ignore heavy build folders anywhere
+**/node_modules/
+**/.next/
+**/dist/
+**/out/
+**/cache/
+**/broadcast/
+**/.env
+**/.env.*
 
-# --- allow recruiter navigation files ---
-!start-here/
-!start-here/**
-
-# --- deps ---
-node_modules/
+# Ignore OS junk
+.DS_Store
