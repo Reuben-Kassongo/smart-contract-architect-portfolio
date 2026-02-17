@@ -26,7 +26,6 @@ Shows understanding of cross-contract assumptions.
 
 ## Solutions Engineer / DevRel
 Verify:
-- [About](about.md)
 - [Portfolio Map](../portfolio-map.md)
 - [Capstone](../capstone/README.md)
 
@@ -41,8 +40,3 @@ Verify:
 - [Contracts](../execution/contracts)
 
 Shows correctness reasoning.
-
----
-
-If unsure where to start:
-→ [Candidate Summary](../cv-summary.md)

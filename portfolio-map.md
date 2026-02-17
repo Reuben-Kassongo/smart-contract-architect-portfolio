@@ -10,29 +10,29 @@ This repository is structured to reduce four hiring risks:
 ---
 
 ## Architecture — System understanding
-→ [Architecture Folder](architecture)
+→ [Architecture Folder](./architecture/)
 
 ---
 
 ## Execution — Correctness reasoning
 Start:
-→ [INVARIANTS](execution/proofs/INVARIANTS.md)
+→ [INVARIANTS](./execution/proofs/INVARIANTS.md)
 
 ---
 
 ## Bug Analysis — Failure diagnosis
-→ [Bug Zoo](bug-zoo)
+→ [Bug Zoo](./bug-zoo/)
 
 ---
 
 ## Capstone — Real usage
-→ [Capstone](capstone)
+→ [Capstone](./capstone/)
 
 ---
 
 ## Recommended 2-minute path
-1. [INVARIANTS](execution/proofs/INVARIANTS.md)
-2. [REENTRANCY](execution/proofs/REENTRANCY_PROOF.md)
-3. [Capstone](capstone/README.md)
+1. [INVARIANTS](./execution/proofs/INVARIANTS.md)
+2. [REENTRANCY](./execution/proofs/REENTRANCY_PROOF.md)
+3. [Capstone](./capstone/README.md)
 
 Each section verifies a different engineering risk.

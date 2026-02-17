@@ -38,11 +38,6 @@ Start with:
 
 ---
 
-## Who is this person?
-→ [About](about.md)
-
----
-
 ## If you only read one thing
 Read: [INVARIANTS](../execution/proofs/INVARIANTS.md)
 This shows how I approach smart contract correctness.
