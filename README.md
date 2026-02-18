@@ -1,74 +1,73 @@
 # Smart-Contract Architect Portfolio
+👉 Start here: start-here/README.md
 
-👉 **Start here:** [start-here/README.md](./start-here/README.md)
-
-Invariant-driven smart-contract architecture showing how correctness,
-security, and composability are enforced — **and how they fail when invariants break**.
+Protocol-adjacent, invariant-driven portfolio showing how smart-contract correctness, security, and composability are enforced — and how they fail when invariants break.
 
 This portfolio proves:
-- correctness via executable invariants,
-- security via failure demonstrations,
-- system-level reasoning via architecture and edges.
+- correctness via executable invariants
+- security via failure demonstrations
+- system-level reasoning via architecture + edges
 
-Audience: protocol engineers, smart-contract developers, and security reviewers.
+Audience: protocol teams, integration/support engineers, and security reviewers.
 
 ---
 
 ## How to evaluate this repository
 
-Depending on what you care about:
+Pick the path based on what you care about:
 
-- **Engineering correctness** → [execution/](./execution/)
-- **Security reasoning** → [bug-zoo/](./bug-zoo/)
-- **System design & scalability** → [architecture/](./architecture/)
+- **Integration/debugging proof** → start-here/
+- **Engineering correctness (executable invariants)** → execution/
+- **Security reasoning (failures + fixes)** → bug-zoo/
+- **System design & failure propagation** → architecture/
 
-Rule: if an invariant is not executable or defended at an edge, it is considered unproven.
+Rule:
+If an invariant is not executable **or** defended at an edge, it is considered unproven.
 
 ---
 
 ## Execution — Invariant-Driven Proof
 
-This section contains **executable proofs** that core protocol invariants hold
-under normal conditions — and fail under adversarial ones.
+Executable proofs that core protocol invariants hold under normal conditions — and fail under adversarial ones.
 
-The focus is on **truth preservation**, not feature completeness.
+Focus: truth preservation, not feature completeness.
 
 Core properties demonstrated:
-- value conservation (Token),
-- accrual correctness (Staking),
-- price integrity (AMM).
+- value conservation (Token)
+- accrual correctness (Staking)
+- price integrity (AMM)
 
 See:
-- [execution/proofs.md](./execution/proofs.md)
-- [execution/rk-city/](./execution/rk-city/)
+- execution/proofs/
+- execution/rk-city/
+
+Run proof tests:
+- forge test -vvv --match-path "execution/tests/unit/*.t.sol"
 
 ---
 
 ## Architecture — City View
 
-The system is modeled as a **city**, not a flat contract set.
+The system is modeled as a city, not a flat contract set.
 
-Contracts are grouped into districts, with explicit edges defining
-how truth flows — and how failures propagate.
+Contracts are grouped into districts, with explicit edges defining how truth flows — and how failures propagate.
 
 See:
-- [architecture/city-map.md](./architecture/city-map.md)
-- [architecture/districts.md](./architecture/districts.md)
-- [architecture/edges.md](./architecture/edges.md)
+- architecture/edges.md
 
 ---
 
-## Security — Protocol Security Lab
+## Security — Bug-Zoo Pointer (Lab is separate repo)
 
-Security research and exploit demonstrations live in a **separate lab**:
+Security exploit demonstrations live in the dedicated lab repo.
+This repo contains a lightweight pointer folder for navigation.
 
-👉 [bug-zoo/](./bug-zoo/) → links to **Protocol Security Lab**
+See:
+- bug-zoo/README.md → links to Protocol Security Lab
 
-This separation is intentional:
-- this repo shows how systems are built correctly,
-- the lab shows how systems fail when invariants break.
+Separation is intentional:
+- this repo shows how systems are built correctly
+- the lab shows how systems fail when invariants break
 
----
-
-Status: Locked.  
+Status: Locked.
 This repository is intentionally not expanded beyond these cases.
