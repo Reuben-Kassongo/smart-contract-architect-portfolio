@@ -1,21 +1,21 @@
 # Start Here
 
-Smart-contract systems thinker focused on reasoning, failure analysis, and debugging rather than tutorial implementations.
+Protocol-adjacent candidate focused on **integration debugging + support-style documentation**.
 
-This repository is structured so you can verify hiring risk quickly.
+This repo is structured so you can **verify hiring risk fast**.  
 Pick the question you need answered.
 
 ---
 
 ## Can this person do the job?
-→ [Candidate Summary](../cv-summary.md)
-(60 seconds — capability overview)
+→ [Candidate Summary](../cv-summary.md)  
+*(60 seconds — capability overview)*
 
 ---
 
-## Do they understand smart contract systems?
-→ [Portfolio Map](../portfolio-map.md)
-(3 minutes — mental model & architecture)
+## Do they understand smart-contract systems?
+→ [Portfolio Map](../portfolio-map.md)  
+*(3 minutes — mental model & architecture)*
 
 ---
 
@@ -27,7 +27,7 @@ Start with:
 - [REENTRANCY PROOF](../execution/proofs/REENTRANCY_PROOF.md)
 - [ACCESS CONTROL PROOF](../execution/proofs/ACCESS_CONTROL_PROOF.md)
 
-(5–10 minutes — proof of skill)
+*(5–10 minutes — trace → fix → prevention with evidence)*
 
 ---
 
@@ -39,5 +39,14 @@ Start with:
 ---
 
 ## If you only read one thing
-Read: [INVARIANTS](../execution/proofs/INVARIANTS.md)
-This shows how I approach smart contract correctness.
+Read: [INVARIANTS](../execution/proofs/INVARIANTS.md)  
+This shows how I reason about correctness and failure patterns.
+
+---
+
+## 5-minute reviewer path (fastest verification)
+1. **Candidate Summary** → [cv-summary.md](../cv-summary.md)  
+2. **One proof** → [REENTRANCY PROOF](../execution/proofs/REENTRANCY_PROOF.md)  
+3. **Capstone overview** → [capstone/README.md](../capstone/README.md)
+
+That’s enough to judge: **clarity, reasoning, and shipping ability**.
