@@ -32,8 +32,6 @@ Start with:
 ---
 
 ## Can they ship an actual working project?
-→ [Capstone](../capstone/README.md)
-
 - [Capstone Overview](../capstone/README.md)
 - [Frontend](../capstone/frontend/README.md)
 
@@ -48,6 +46,6 @@ This shows how I reason about correctness and failure patterns.
 ## 5-minute reviewer path (fastest verification)
 1. [Candidate Summary](../cv-summary.md)
 2. One proof → [REENTRANCY PROOF](../execution/proofs/REENTRANCY_PROOF.md)
-3. Capstone overview → [capstone/README.md](../capstone/README.md)
+3. Capstone overview → [Capstone README](../capstone/README.md)
 
 That’s enough to judge: clarity, reasoning, and shipping ability.
