@@ -1,38 +1,39 @@
 # Start Here
 
-Protocol-adjacent candidate focused on **integration debugging + support-style documentation**.
+Protocol-adjacent candidate focused on integration debugging + support-style documentation.
 
-This repo is structured so you can **verify hiring risk fast**.  
+This repo is structured so you can verify hiring risk fast.
 Pick the question you need answered.
 
 ---
 
 ## Can this person do the job?
 → [Candidate Summary](../cv-summary.md)  
-*(60 seconds — capability overview)*
+(60 seconds — capability overview)
 
 ---
 
 ## Do they understand smart-contract systems?
 → [Portfolio Map](../portfolio-map.md)  
-*(3 minutes — mental model & architecture)*
+(3 minutes — mental model & architecture)
 
 ---
 
 ## Can they debug and reason about real code?
-→ [Execution Folder](../execution)
+→ [Execution Folder](../execution/)
 
 Start with:
 - [INVARIANTS](../execution/proofs/INVARIANTS.md)
 - [REENTRANCY PROOF](../execution/proofs/REENTRANCY_PROOF.md)
 - [ACCESS CONTROL PROOF](../execution/proofs/ACCESS_CONTROL_PROOF.md)
 
-*(5–10 minutes — trace → fix → prevention with evidence)*
+(5–10 minutes — trace → fix → prevention with evidence)
 
 ---
 
 ## Can they ship an actual working project?
-→ [Capstone](../capstone)
+→ [Capstone](../capstone/README.md)
+
 - [Capstone Overview](../capstone/README.md)
 - [Frontend](../capstone/frontend/README.md)
 
@@ -45,8 +46,8 @@ This shows how I reason about correctness and failure patterns.
 ---
 
 ## 5-minute reviewer path (fastest verification)
-1. **Candidate Summary** → [cv-summary.md](../cv-summary.md)  
-2. **One proof** → [REENTRANCY PROOF](../execution/proofs/REENTRANCY_PROOF.md)  
-3. **Capstone overview** → [capstone/README.md](../capstone/README.md)
+1. [Candidate Summary](../cv-summary.md)
+2. One proof → [REENTRANCY PROOF](../execution/proofs/REENTRANCY_PROOF.md)
+3. Capstone overview → [capstone/README.md](../capstone/README.md)
 
-That’s enough to judge: **clarity, reasoning, and shipping ability**.
+That’s enough to judge: clarity, reasoning, and shipping ability.
