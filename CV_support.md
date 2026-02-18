@@ -16,7 +16,8 @@ Security Lab — [Protocol Security Lab](https://github.com/Reuben-Kassongo/prot
 Remote (Global) · Flexible timezone (EU/UK/US)
 
 ## SUMMARY
-I debug smart-contract integration issues end-to-end: trace → isolate condition → fix → verify → prevent.
+I debug smart-contract and wallet integration issues end-to-end:  
+trace → isolate root cause → fix → verify → prevent recurrence.
 
 **Evidence:**  
 • 8 executable proof write-ups  
